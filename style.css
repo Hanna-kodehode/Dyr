@@ -1,0 +1,200 @@
+/* Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Figtree:ital,wght@0,300..900;1,300..900&family=Hanalei+Fill&family=Turret+Road:wght@200;300;400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&family=Concert+One&family=Figtree:ital,wght@0,300..900;1,300..900&family=Hanalei+Fill&family=Turret+Road:wght@200;300;400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chewy&family=Chilanka&family=Concert+One&family=Figtree:ital,wght@0,300..900;1,300..900&family=Hanalei+Fill&family=Turret+Road:wght@200;300;400;500;700;800&display=swap");
+
+.hanalei-fill-regular {
+  font-family: "Hanalei Fill", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.chilanka-regular {
+  font-family: "Chilanka", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*root and body standards*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-background-color: #ddbb54;
+  --main-text-color: #000000;
+  --font-and-box-color: #dbc78d;
+  --main-font-size: 18px;
+  --nav-backgroun-color: #4e8b4a;
+  --footer-color: #3d3829;
+  --footer-background-color: #b29a51;
+}
+
+body {
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+}
+
+/*Nav*/
+
+h1 {
+  font-family: "Hanalei Fill";
+  color: var(--font-and-box-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 0.25px var(--main-text-color);
+  font-size: 3rem;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--nav-backgroun-color);
+  padding: 10px;
+  width: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+nav div {
+  display: flex;
+  flex-direction: row;
+  object-fit: cover;
+} /*Main*/
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+/*grid for text and images*/
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(25, 1fr);
+  object-fit: cover;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100vw;
+  gap: 10px;
+}
+
+/*main text*/
+
+.text-container {
+  background-color: var(--font-and-box-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 5px 20px;
+  width: 33vw;
+  grid-row: span 3;
+}
+
+h2 {
+  margin: 10px 0;
+  font-family: "Chewy";
+  color: var(--font-and-box-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 0.25px var(--main-text-color);
+  background-color: var(--nav-backgroun-color);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 2.1rem;
+}
+
+.text-background {
+  background-color: #ffff;
+  border-radius: 10px;
+  padding: 0px 10px;
+}
+
+p {
+  font-family: "Chilanka";
+  padding: 15px;
+}
+
+/*Pictures:*/
+
+.grid-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+  max-width: 550px;
+  max-height: 285px;
+  overflow: hidden;
+}
+
+.img-container {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+/* img styling */
+.img1 {
+  grid-column: span 12;
+}
+
+.img2 {
+  grid-column: span 8;
+}
+
+.img3 {
+  grid-column: span 8;
+}
+
+.img4 {
+  grid-column: span 8;
+}
+
+.img5 {
+  grid-column: span 11;
+}
+
+.img6 {
+  grid-column: span 13;
+}
+
+/*footer*/
+
+/*links styling*/
+
+.footer {
+  background-color: var(--footer-background-color);
+  color: var(--footer-color);
+  height: 30vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+footer a {
+  font-family: "Chilanka";
+  color: var(--footer-color);
+  text-decoration: underline;
+  padding: 0px 20px;
+}
+
+footer a:hover {
+  cursor: pointer;
+}
